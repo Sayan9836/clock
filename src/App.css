@@ -1,0 +1,89 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  font-family:digital;
+  background-color: rgb(25, 81, 81);
+  color: rgb(255, 255, 255);
+}
+
+main {
+  width: 40vw;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.break-length-wrapper, .session-length-wrapper{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.timer-wrapper {
+  border: 8px solid rgb(57, 89, 57);
+  margin-inline: auto;
+  border-radius: 40px;
+  min-height: 10.7rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 17rem;
+}
+
+#timer-label {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#time-left > span {
+  font-size: 4.2rem;
+}
+
+.button-wrapper{
+  display: flex;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 60em){
+
+  main {
+    width: 90vw;
+  }
+}
